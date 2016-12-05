@@ -12,17 +12,22 @@ catClass.classList.add("cat");
 var cats = document.getElementById('cats');
 
 
-var li = document.createElement("li");
-li.innerText = "Name: Tabby, Favourite Food: Fish";
+var li1 = document.createElement("li");
+li1.innerText = "Name: Garfield" ;
+
+var li2 = document.createElement("li");
+li2.innerText = "Favourite Food: Lasagne";
 
 var img = document.createElement("img");
-img.src = "http://66.media.tumblr.com/d1f01bbe0150fda0c40d2151c5eaeac8/tumblr_odlqqskjj61v9cejwo1_400.jpg";
+img.src = "http://comicsalliance.com/files/2015/06/garfield01.jpg"
 
-li.appendChild(catClass);
+catClass.appendChild(li1);
 
-img.appendChild(catClass);
+catClass.appendChild(li2);
 
-cats.append(catClass);
+catClass.appendChild(img);
+
+cats.appendChild(catClass);
 
 
 
