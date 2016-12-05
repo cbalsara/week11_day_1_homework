@@ -30,20 +30,27 @@
   FALSE
 
 8. List two ways to get all the elements by class 'cat'
-  var cats = document.getElementsByClass("cat");
-  console.log(cats)
+
+    var cats = document.getElementsByClass("cat");
+    console.log(cats)
 
 9. List two ways to retrieve the element with id "goat"
-  var goat = document.getElementById('goat');
-  console.log(goat;) 
+
+    var goat = document.getElementById('goat');
+    console.log(goat;) 
 
 10. List two ways to get all the li elements
-list item
+
+  var allItems = document.getItemsQuery('.li');
+  var allItems = document.querySelector('.li');
 
 
 11. List two ways to get the first li element
 
+  var allItems = document.querySelector('.li');
+  console.log(allItems[0]);
 
 12. How can we set the a given element to be hidden?
-  a.style.visibility = "hidden";
+
+    a.style.visibility = "hidden";
 
