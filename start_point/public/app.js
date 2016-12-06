@@ -36,17 +36,18 @@
 
 window.onload = function(){
 
-var catClass = createUl("Garfield", "Lasagne");
-
+var catClass = createUl("Garfield", "Lasagne","http://comicsalliance.com/files/2015/06/garfield01.jpg");
 };
 
 
-var createUl = function(name, food){
+var createUl = function(name, food, picture){
   var li1 = createList1(name);
   var li2 = createList2(food);
+  var img = createImg(picture);
   var catClass = document.createElement('ul');
   catClass.appendChild(li1);
   catClass.appendChild(li2);
+  catClass.appendChild(img);
   cats.appendChild(catClass);
   catClass.classList.add("cat");
   return catClass;
@@ -62,6 +63,12 @@ var createList2 = function(food){
   var li2 = document.createElement("li");
   li2.innerText = food;
   return li2;
+};
+
+var createImg = function(picture){
+  var img = document.createElement("img");
+  img.src = picture;
+  return img;
 };
 
 
